@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.tombolPreview = new System.Windows.Forms.Button();
+            this.tombolPreviouse = new System.Windows.Forms.Button();
             this.tombolNext = new System.Windows.Forms.Button();
             this.tombolPlay = new System.Windows.Forms.Button();
             this.tombolPause = new System.Windows.Forms.Button();
@@ -49,16 +49,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.volumeBar)).BeginInit();
             this.SuspendLayout();
             // 
-            // tombolPreview
+            // tombolPreviouse
             // 
-            this.tombolPreview.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tombolPreview.Location = new System.Drawing.Point(8, 189);
-            this.tombolPreview.Margin = new System.Windows.Forms.Padding(2);
-            this.tombolPreview.Name = "tombolPreview";
-            this.tombolPreview.Size = new System.Drawing.Size(58, 23);
-            this.tombolPreview.TabIndex = 0;
-            this.tombolPreview.Text = "preview";
-            this.tombolPreview.UseVisualStyleBackColor = true;
+            this.tombolPreviouse.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tombolPreviouse.Location = new System.Drawing.Point(8, 189);
+            this.tombolPreviouse.Margin = new System.Windows.Forms.Padding(2);
+            this.tombolPreviouse.Name = "tombolPreviouse";
+            this.tombolPreviouse.Size = new System.Drawing.Size(58, 23);
+            this.tombolPreviouse.TabIndex = 0;
+            this.tombolPreviouse.Text = "previous";
+            this.tombolPreviouse.UseVisualStyleBackColor = true;
+            this.tombolPreviouse.Click += new System.EventHandler(this.tombolPreviouse_Click);
             // 
             // tombolNext
             // 
@@ -70,6 +71,7 @@
             this.tombolNext.TabIndex = 1;
             this.tombolNext.Text = "next";
             this.tombolNext.UseVisualStyleBackColor = true;
+            this.tombolNext.Click += new System.EventHandler(this.tombolNext_Click);
             // 
             // tombolPlay
             // 
@@ -224,7 +226,7 @@
             this.Controls.Add(this.tombolPause);
             this.Controls.Add(this.tombolPlay);
             this.Controls.Add(this.tombolNext);
-            this.Controls.Add(this.tombolPreview);
+            this.Controls.Add(this.tombolPreviouse);
             this.Font = new System.Drawing.Font("SF Pro Display", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -240,7 +242,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button tombolPreview;
+        private System.Windows.Forms.Button tombolPreviouse;
         private System.Windows.Forms.Button tombolNext;
         private System.Windows.Forms.Button tombolPlay;
         private System.Windows.Forms.Button tombolPause;

@@ -40,6 +40,22 @@ namespace MusicPlayer
             player.Ctlcontrols.play();
         }
 
+        private void tombolNext_Click(object sender, EventArgs e)
+        {
+            if (trackList.SelectedIndex < trackList.Items.Count - 1)
+            {
+                trackList.SelectedIndex = trackList.SelectedIndex + 1;
+            }
+        }
+
+        private void tombolPreviouse_Click(object sender, EventArgs e)
+        {
+            if (trackList.SelectedIndex >0)
+            {
+                trackList.SelectedIndex = trackList.SelectedIndex - 1;
+            }
+        }
+
         private void tombolOpen_Click(object sender, EventArgs e)
         {
             OpenFileDialog bukaDialogFile = new OpenFileDialog();
