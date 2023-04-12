@@ -56,6 +56,24 @@ namespace MusicPlayer
             }
         }
 
+        private void timerPlaying_Tick(object sender, EventArgs e)
+        {
+            if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                progressBarPlaying.Maximum = (int)player.Ctlcontrols.currentItem.duration;
+                progressBarPlaying.Value = (int)player.Ctlcontrols.currentPosition;
+            }
+            try
+            {
+                labelTrackStart.Text = player.Ctlcontrols.currentPositionString;
+                labelTrackEnd.Text = player.Ctlcontrols.currentItem.durationString.ToString();
+            }
+            catch
+            {
+                 
+            }
+        }
+
         private void tombolOpen_Click(object sender, EventArgs e)
         {
             OpenFileDialog bukaDialogFile = new OpenFileDialog();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tombolPreviouse = new System.Windows.Forms.Button();
             this.tombolNext = new System.Windows.Forms.Button();
@@ -35,7 +36,7 @@
             this.tombolPause = new System.Windows.Forms.Button();
             this.tombolStop = new System.Windows.Forms.Button();
             this.tombolOpen = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBarPlaying = new System.Windows.Forms.ProgressBar();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.trackList = new System.Windows.Forms.ListBox();
             this.player = new AxWMPLib.AxWindowsMediaPlayer();
@@ -44,6 +45,7 @@
             this.volumeTrack = new System.Windows.Forms.Label();
             this.labelTrackStart = new System.Windows.Forms.Label();
             this.labelTrackEnd = new System.Windows.Forms.Label();
+            this.timerPlaying = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.volumeBar)).BeginInit();
@@ -121,12 +123,12 @@
             this.tombolOpen.UseVisualStyleBackColor = true;
             this.tombolOpen.Click += new System.EventHandler(this.tombolOpen_Click);
             // 
-            // progressBar1
+            // progressBarPlaying
             // 
-            this.progressBar1.Location = new System.Drawing.Point(8, 174);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(368, 10);
-            this.progressBar1.TabIndex = 6;
+            this.progressBarPlaying.Location = new System.Drawing.Point(8, 174);
+            this.progressBarPlaying.Name = "progressBarPlaying";
+            this.progressBarPlaying.Size = new System.Drawing.Size(368, 10);
+            this.progressBarPlaying.TabIndex = 6;
             // 
             // pictureBox1
             // 
@@ -207,6 +209,11 @@
             this.labelTrackEnd.TabIndex = 14;
             this.labelTrackEnd.Text = "00:00";
             // 
+            // timerPlaying
+            // 
+            this.timerPlaying.Enabled = true;
+            this.timerPlaying.Tick += new System.EventHandler(this.timerPlaying_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -220,7 +227,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.volumeBar);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progressBarPlaying);
             this.Controls.Add(this.tombolOpen);
             this.Controls.Add(this.tombolStop);
             this.Controls.Add(this.tombolPause);
@@ -248,7 +255,7 @@
         private System.Windows.Forms.Button tombolPause;
         private System.Windows.Forms.Button tombolStop;
         private System.Windows.Forms.Button tombolOpen;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBarPlaying;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox trackList;
         private AxWMPLib.AxWindowsMediaPlayer player;
@@ -257,6 +264,7 @@
         private System.Windows.Forms.Label volumeTrack;
         private System.Windows.Forms.Label labelTrackStart;
         private System.Windows.Forms.Label labelTrackEnd;
+        private System.Windows.Forms.Timer timerPlaying;
     }
 }
 
