@@ -1,0 +1,14 @@
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.exe.config
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.exe
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\bin\Debug\MusicPlayer.pdb
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.Form1.resources
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.Properties.Resources.resources
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.GenerateResource.Cache
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.exe
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.pdb
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\bin\Debug\Interop.WMPLib.dll
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\bin\Debug\AxInterop.WMPLib.dll
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\Interop.WMPLib.dll
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\AxInterop.WMPLib.dll
+c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.ResolveComReference.cache
+C:\Users\MuhammadZafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csprojResolveAssemblyReference.cache
