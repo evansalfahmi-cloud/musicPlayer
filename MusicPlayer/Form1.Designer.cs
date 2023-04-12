@@ -37,7 +37,7 @@
             this.tombolStop = new System.Windows.Forms.Button();
             this.tombolOpen = new System.Windows.Forms.Button();
             this.progressBarPlaying = new System.Windows.Forms.ProgressBar();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picArtImages = new System.Windows.Forms.PictureBox();
             this.trackList = new System.Windows.Forms.ListBox();
             this.player = new AxWMPLib.AxWindowsMediaPlayer();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.labelTrackEnd = new System.Windows.Forms.Label();
             this.timerPlaying = new System.Windows.Forms.Timer(this.components);
             this.volumeBar = new System.Windows.Forms.TrackBar();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArtImages)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.volumeBar)).BeginInit();
             this.SuspendLayout();
@@ -129,16 +129,17 @@
             this.progressBarPlaying.Name = "progressBarPlaying";
             this.progressBarPlaying.Size = new System.Drawing.Size(368, 10);
             this.progressBarPlaying.TabIndex = 6;
+            this.progressBarPlaying.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progressBarPlaying_MouseDown);
             // 
-            // pictureBox1
+            // picArtImages
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(8, 48);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(116, 116);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.picArtImages.Image = ((System.Drawing.Image)(resources.GetObject("picArtImages.Image")));
+            this.picArtImages.Location = new System.Drawing.Point(8, 48);
+            this.picArtImages.Name = "picArtImages";
+            this.picArtImages.Size = new System.Drawing.Size(116, 116);
+            this.picArtImages.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picArtImages.TabIndex = 8;
+            this.picArtImages.TabStop = false;
             // 
             // trackList
             // 
@@ -227,7 +228,7 @@
             this.Controls.Add(this.player);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.volumeBar);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picArtImages);
             this.Controls.Add(this.progressBarPlaying);
             this.Controls.Add(this.tombolOpen);
             this.Controls.Add(this.tombolStop);
@@ -240,7 +241,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArtImages)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.volumeBar)).EndInit();
             this.ResumeLayout(false);
@@ -257,7 +258,7 @@
         private System.Windows.Forms.Button tombolStop;
         private System.Windows.Forms.Button tombolOpen;
         private System.Windows.Forms.ProgressBar progressBarPlaying;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picArtImages;
         private System.Windows.Forms.ListBox trackList;
         private AxWMPLib.AxWindowsMediaPlayer player;
         private System.Windows.Forms.Label label1;

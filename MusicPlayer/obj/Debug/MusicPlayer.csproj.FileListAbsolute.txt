@@ -12,3 +12,4 @@ c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicP
 c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\AxInterop.WMPLib.dll
 c:\users\muhammadzafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csproj.ResolveComReference.cache
 C:\Users\MuhammadZafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\obj\Debug\MusicPlayer.csprojResolveAssemblyReference.cache
+C:\Users\MuhammadZafran\documents\visual studio 2015\Projects\MusicPlayer\MusicPlayer\bin\Debug\taglib-sharp.dll

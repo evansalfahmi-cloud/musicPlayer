@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MusicPlayer
 {
@@ -25,6 +26,16 @@ namespace MusicPlayer
         {
             player.URL = paths[trackList.SelectedIndex];
             player.Ctlcontrols.play();
+            try
+            {
+                var file = TagLib.File.Create(paths[trackList.SelectedIndex]);
+                var bin = (byte[])(file.Tag.Pictures[0].Data.Data);
+                picArtImages.Image = Image.FromStream(new MemoryStream(bin));
+            }
+            catch
+            {
+
+            }
         }
 
         private void tombolStop_Click(object sender, EventArgs e)
@@ -80,6 +91,11 @@ namespace MusicPlayer
         {
             player.settings.volume = volumeBar.Value;
             volumeTrack.Text = volumeBar.Value.ToString() + "%";
+        }
+
+        private void progressBarPlaying_MouseDown(object sender, MouseEventArgs e)
+        {
+            player.Ctlcontrols.currentPosition = player.currentMedia.duration * e.X / progressBarPlaying.Width;
         }
 
         private void tombolOpen_Click(object sender, EventArgs e)
