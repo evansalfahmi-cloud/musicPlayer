@@ -15,6 +15,8 @@ namespace MusicPlayer
         public Form1()
         {
             InitializeComponent();
+            volumeBar.Value = 50;
+            volumeTrack.Text = "50%";
         }
 
         string[] paths, files;
@@ -72,6 +74,12 @@ namespace MusicPlayer
             {
                  
             }
+        }
+
+        private void volumeBar_Scroll(object sender, EventArgs e)
+        {
+            player.settings.volume = volumeBar.Value;
+            volumeTrack.Text = volumeBar.Value.ToString() + "%";
         }
 
         private void tombolOpen_Click(object sender, EventArgs e)

@@ -40,12 +40,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.trackList = new System.Windows.Forms.ListBox();
             this.player = new AxWMPLib.AxWindowsMediaPlayer();
-            this.volumeBar = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.volumeTrack = new System.Windows.Forms.Label();
             this.labelTrackStart = new System.Windows.Forms.Label();
             this.labelTrackEnd = new System.Windows.Forms.Label();
             this.timerPlaying = new System.Windows.Forms.Timer(this.components);
+            this.volumeBar = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.volumeBar)).BeginInit();
@@ -159,16 +159,6 @@
             this.player.Size = new System.Drawing.Size(395, 40);
             this.player.TabIndex = 9;
             // 
-            // volumeBar
-            // 
-            this.volumeBar.Location = new System.Drawing.Point(347, 61);
-            this.volumeBar.Maximum = 100;
-            this.volumeBar.Name = "volumeBar";
-            this.volumeBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.volumeBar.Size = new System.Drawing.Size(45, 96);
-            this.volumeBar.TabIndex = 10;
-            this.volumeBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -213,6 +203,17 @@
             // 
             this.timerPlaying.Enabled = true;
             this.timerPlaying.Tick += new System.EventHandler(this.timerPlaying_Tick);
+            // 
+            // volumeBar
+            // 
+            this.volumeBar.Location = new System.Drawing.Point(347, 61);
+            this.volumeBar.Maximum = 100;
+            this.volumeBar.Name = "volumeBar";
+            this.volumeBar.Orientation = System.Windows.Forms.Orientation.Vertical;
+            this.volumeBar.Size = new System.Drawing.Size(45, 96);
+            this.volumeBar.TabIndex = 10;
+            this.volumeBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.volumeBar.Scroll += new System.EventHandler(this.volumeBar_Scroll);
             // 
             // Form1
             // 
@@ -259,12 +260,12 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ListBox trackList;
         private AxWMPLib.AxWindowsMediaPlayer player;
-        private System.Windows.Forms.TrackBar volumeBar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label volumeTrack;
         private System.Windows.Forms.Label labelTrackStart;
         private System.Windows.Forms.Label labelTrackEnd;
         private System.Windows.Forms.Timer timerPlaying;
+        private System.Windows.Forms.TrackBar volumeBar;
     }
 }
 
